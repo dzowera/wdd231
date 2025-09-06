@@ -1,0 +1,58 @@
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  
+}
+
+header img{
+  width: 40px;
+  padding: 5px;
+}
+
+header button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+button{
+  margin-right: 7px;
+}
+
+nav{
+  display: none;
+}
+
+.add-x{
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #757575;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 60px;
+}
+.add-x ul li{
+  list-style: none;
+  color: white;
+  padding: 7px;
+}
+.add-x ul li:hover{
+  background-color: rgb(219, 98, 54);
+  width: max-content;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}

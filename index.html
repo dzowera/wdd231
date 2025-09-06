@@ -3,9 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="author" content="Innocent Dzowera">
+  <meta name="description" content="making the footer interactive">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- link JS -->
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/header.js" defer></script>
+  <script src="scripts/results.js" type="module" defer></script>
+
 </head>
 <body>
-  <p>Hello World</p>
+  <header>
+    <img src="images/human-social-security.svg" alt="human-social-security">
+    <button class="ham-menu">
+      &#9776;
+    </button>
+  </header>
+  <nav>
+    <ul>
+      <a><li>Home</li></a>
+      <a><li>Chamber Project</li></a>
+      <a><li>Final Project</li></a>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <div class="larger-container">
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>My name is Innocent Dzowera. I am 25 years old and single. I was born in Malawi, where I currently live. I am studying for a BASc in Software Development at BYU and will complete my first certificate in seven weeks.</p>
+        
+        <p>I enjoy coding and always strive to write efficient code. I am passionate about problem-solving and my goal is to work on projects with great teams while learning and applying different technologies in the tech world.</p>
+
+        <p>Thank you for your patience and support.</p>
+      </section>
+      <section class="my-picture">
+        <h2>Student Photo</h2>
+        <div>
+          <img src="images/my-picture.jpg" alt="placeholder">
+        </div>
+      </section>
+    </div>
+
+    <section class="courses">
+      <h2>Web Certificates Course</h2>
+
+      <div class="course-button">
+        <button class="all-course">All</button>
+        <button class="cse-courses">CSE</button>
+        <button class="wdd-courses">WDD</button>
+      </div>
+      
+      <div class="results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/dzowera" target="_blank">
+        <img src="images/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/innocent-dzowera-a31477274" target="_blank">
+        <img src="images/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="https://web.facebook.com/Centinho22" target="_blank">
+        <img src="images/facebook.svg" alt="facebook">
+      </a>
+      <a href="https://wa.me/265995877256" target="_blank">
+        <img src="images/whatsapp.svg" alt="whatsapp">
+      </a>
+      
+    </div>
+    <div class="info">
+      <p>Copyright Reserved &copy; <span class="my-name"></span></p>
+      <p>Last Date Modified: <span class="last-modified"></span></p>
+    </div>
+  </footer>
+
 </body>
 </html>
