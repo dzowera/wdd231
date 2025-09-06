@@ -1,0 +1,173 @@
+/* --------------- THIS IS FOR GENERAL CSS --------------- */
+
+body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left:10px ;
+      margin-right: 10px;
+      padding-bottom: 250px;
+      background-color: #FAFAFA;
+}
+
+/* --------------- THIS IS FOR THE HEARDER ------------ */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  height: 60px;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  
+}
+
+header img{
+  width: 40px;
+  padding: 5px;
+}
+
+header button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+button{
+  margin-right: 7px;
+}
+
+nav{
+  display: none;
+}
+
+.add-x{
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #757575;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 60px;
+}
+.add-x ul li{
+  list-style: none;
+  color: white;
+  padding: 7px;
+}
+.add-x ul li:hover{
+  background-color: rgb(219, 98, 54);
+  width: max-content;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+
+/* --------------- THIS IS FOR THE MAIN --------------- */
+section{
+  border: red solid 1px;
+  margin-bottom: 10px;
+}
+section h2{
+  background-color: rgb(80, 80, 80);
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+
+.about-me p{
+  padding: 10px;
+}
+
+.my-picture{
+  height: 340px;
+}
+
+.my-picture div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-picture div img{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.courses .course-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.js-number-of-courses{
+  font-style: italic;
+  text-align: center;
+}
+.js-course-num{
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.js-result-course{
+  background-color: rgb(219, 98, 54);
+  color: white;
+  border: none;
+  border:none;
+  border-radius: 5px;
+  width: 90px;
+}
+
+.js-result-div{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  column-gap: 4px;
+  row-gap: 4px;
+  margin-bottom: 5px;
+  margin-left: 75px;
+}
+
+.is-completed{
+  background-color: chartreuse;
+}
+
+/* --------------- THIS IS FOR THE FOTTER --------------- */
+footer{
+      background-color: rgb(219, 98, 54);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      
+    }
+    .social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+      height: 80px;
+    }
+    .social a img{
+      width: 40px;
+      padding: 10px;
+      margin: 5px;
+    }
+    .social img:hover{
+      background-color: #ddd;
+      border-radius: 20px;
+      transition: background-color border-radius 0.75s;
+      cursor: pointer;
+    }
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
