@@ -4,7 +4,7 @@ body{
       font-family: Roboto;
       margin-left:10px ;
       margin-right: 10px;
-      padding-bottom: 250px;
+      padding-bottom: 150px;
       background-color: #FAFAFA;
 }
 
@@ -32,12 +32,12 @@ header button{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 button{
-  margin-right: 7px;
+  margin-right: 20px;
 }
 
 nav{
@@ -55,10 +55,16 @@ nav{
   left: 0;
   top: 60px;
 }
+
 .add-x ul li{
   list-style: none;
-  color: white;
-  padding: 7px;
+  padding: 5px;
+  
+}
+.add-x ul li a{
+ text-decoration: none;
+ color: white;
+ 
 }
 .add-x ul li:hover{
   background-color: rgb(219, 98, 54);
@@ -67,11 +73,14 @@ nav{
   transition: background-color 0.25s;
 }
 
-
 /* --------------- THIS IS FOR THE MAIN --------------- */
+main{
+  margin-top: 180px;
+}
+
 section{
   border: red solid 1px;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 section h2{
   background-color: rgb(80, 80, 80);
@@ -145,29 +154,32 @@ footer{
       left: 0;
       right: 0;
       
-    }
-    .social{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #eee;
-      height: 80px;
-    }
-    .social a img{
-      width: 40px;
-      padding: 10px;
-      margin: 5px;
-    }
-    .social img:hover{
-      background-color: #ddd;
-      border-radius: 20px;
-      transition: background-color 0.25s;
-      cursor: pointer;
-    }
+}
 
-    .info{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
-    }
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height: 80px;
+}
+
+.social a img{
+  width: 40px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.social img:hover{
+  background-color: #ddd;
+  border-radius: 20px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
