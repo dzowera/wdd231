@@ -2,31 +2,44 @@
   header button{
     display: none;
   }
-  nav{
-    display: block;
-    
+  
+  nav {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     top: 60px;
     left: 0;
     right: 0;
-    
-    background-color: #ddd;
+    background-color: #8f8c8c;
   }
-  nav ul{
-    display: flex;
-  }
+  nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* optional */
+  align-items: center;     /* optional */
+  padding: 0;
+  margin: 0;
+}
+
+
   nav ul li{
+  
     list-style: none;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: white;
     margin: 10px;
     padding: 10px;
   }
   nav ul li:hover{
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(121, 117, 117);
     transition: background-color 0.25s;
   }
 
   main{
-    padding-top: 100px;
+    margin-top: 90px;
   }
   .larger-container{
     display: grid;
