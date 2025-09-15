@@ -10,24 +10,25 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 80px;
   background-color: brown;
   padding: 10px;
   color: white;
 }
 #logo-name{
   display: flex;
+  align-items: center;
 }
 #logo-name img{
-  width: 60px;
+  width: 100px;
   margin: 0 7px;
 }
 #logo-name p{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #ham-menu{
-  font-size: 30px;
+  font-size: 60px;
 }
 #ham-menu:hover{
   cursor: pointer;
