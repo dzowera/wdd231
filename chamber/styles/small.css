@@ -69,9 +69,8 @@ nav{
 .hero-images {
   border: solid rgb(120, 120, 120) 2px;
   height: 120px;
- 
-  
 }
+
 .hero-images img{
   width: 100%;
   height: 100%;
@@ -98,7 +97,7 @@ nav{
 }
 
 .content-section div{
-  color: white;
+  color: black;
 }
 
 .content-section div{
@@ -178,4 +177,4 @@ footer{
 .wide-nav{
   display: none;
 }
-/* demo */
+
