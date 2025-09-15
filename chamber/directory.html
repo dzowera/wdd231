@@ -6,6 +6,11 @@
   <meta name="author" content="Innocent Dzowera">
   <meta name="description" content="Landing page for Chamber project">
   <title>Chamber Project</title>
+   <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
   <!-- add my favicon -->
   <link rel="icon" href="../images/favicon.ico">
 
@@ -17,6 +22,7 @@
 
    <!-- link the JS File, remember order matters -->
   <script src="scripts/header.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
   <!-- link css, remember order matters -->
   <link rel="stylesheet" href="styles/small.css">
 <body>
@@ -44,7 +50,114 @@
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur voluptates officia doloremque laboriosam neque illum deleniti maxime alias aspernatur consectetur perspiciatis non provident earum voluptatibus voluptatum, quas aperiam modi.
       Placeat, inventore. Autem nobis ipsum odio reiciendis id est qui, minima, voluptatibus fugit molestiae quidem similique consequuntur fugiat sit adipisci. Molestias recusandae, commodi voluptatibus optio omnis fugit aliquam cum quasi?</div>
      </section>
+
+     <section class="content-section">
+      <h2>Current Weather</h2>
+      <div class="weather-container">
+        <div class="weather-img">
+          <img src="images/weather-icon.svg" alt="weather icon">
+        </div>
+        <div class="weather-data">
+          <p>75&deg; C</p>
+          <p>Partly Cloudy</p>
+          <p>High: 89&deg; C</p>
+          <p>Low: 89&deg; C </p>
+          <p>Humidity: 35%</p>
+          <p>Sunrise: 7:30 am</p>
+          <p>Sunset: 17:45 pm</p>
+        </div>
+      </div>
+     </section>
+
+     <section class="content-section">
+      <h2>Weather Forecast</h2>
+      <div class="forecast-container">
+        <p>Today: 90&deg; F</p>
+        <p>Wednesday: 90&deg; F</p>
+        <p>Thursday: 90&deg; F</p>
+      </div>
+     </section>
+    </div>
+
+    <div class="business-section">
+      <section>
+        <div class="business-name">
+          <h2>Business Name</h2>
+          <p>Business Tag Line</p>
+        </div>
+        <div class="business-info">
+          <div>
+            <img src="images/windows-icon.svg" alt="business icon">
+          </div>
+          <div>
+            <p><strong>Email</strong>: info@gmail.com</p>
+            <p><strong>Phone</strong>: 995877</p>
+            <p><strong>URL</strong>: mybusiness.com</p>
+          </div>
+          
+        </div>
+      </section>
+      <section>
+        <div class="business-name">
+          <h2>Business Name</h2>
+          <p>Business Tag Line</p>
+        </div>
+        <div class="business-info">
+          <div>
+            <img src="images/windows-icon.svg" alt="business icon">
+          </div>
+          <div>
+            <p><strong>Email</strong>: info@gmail.com</p>
+            <p><strong>Phone</strong>: 995877</p>
+            <p><strong>URL</strong>: mybusiness.com</p>
+          </div>
+          
+        </div>
+      </section>
+      <section>
+        <div class="business-name">
+          <h2>Business Name</h2>
+          <p>Business Tag Line</p>
+        </div>
+        <div class="business-info">
+          <div>
+            <img src="images/windows-icon.svg" alt="business icon">
+          </div>
+          <div>
+            <p><strong>Email</strong>: info@gmail.com</p>
+            <p><strong>Phone</strong>: 995877</p>
+            <p><strong>URL</strong>: mybusiness.com</p>
+          </div>
+          
+        </div>
+      </section>
     </div>
   </main>
+
+  <footer>
+    <div class="chamber-address">
+      <p>Vision Link</p>
+      <p>Malingunde Road</p>
+      <p>info@visionlink.org</p>
+      <p>+265 99 5877 256</p>
+    </div>
+    <div class="social">
+      <a href="#" target="_blank">
+        <img src="images/facebook.svg" alt="facebook logo">
+      </a>
+      <a href="#">
+        <img src="images/github.svg" alt="github logo">
+      </a>
+      <a href="#">
+        <img src="images/linkedin.svg" alt="linkedin logo">
+      </a>
+    </div>
+    <div class="about">
+      <p>WDD231 Class project</p>
+      <p id="name"></p>
+      <p>&copy;<span id="year"></span> Vision Link</p>
+      <p>Last Date Modified: <span id="last-mod"></span></p>
+    </div>
+  </footer>
 </body>
 </html>

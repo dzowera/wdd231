@@ -1,7 +1,8 @@
-function toggleMenu(){
-  const hamMenu = document.querySelector('#ham-menu');
-  const navElem = document.querySelector('#nav');
+const hamMenu = document.querySelector('#ham-menu');
+const navElem = document.querySelector('#nav');
 
+function toggleMenu(){
+  
   hamMenu.addEventListener('click', () =>{
     navElem.classList.toggle('js-nav'); 
     
@@ -13,6 +14,7 @@ function toggleMenu(){
 
   });
 }
+
 toggleMenu();
 
 

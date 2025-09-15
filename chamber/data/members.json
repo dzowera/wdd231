@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Malawi Tech Solutions",
+      "address": "Plot 12, Mzuzu Tech Park",
+      "phone": "+265 999 123 456",
+      "website": "https://malawitech.mw",
+      "image": "malawi-tech.png",
+      "membershipLevel": 3,
+      "industry": "Software Development",
+      "description": "Innovative software solutions tailored for local businesses and startups."
+    },
+    {
+      "name": "Lakeview Eco Tours",
+      "address": "Salima Lakeshore Road",
+      "phone": "+265 888 456 789",
+      "website": "https://lakeviewtours.mw",
+      "image": "lakeview-eco.png",
+      "membershipLevel": 2,
+      "industry": "Tourism",
+      "description": "Eco-friendly travel experiences showcasing the natural beauty of Lake Malawi."
+    },
+    {
+      "name": "Vision Link Media",
+      "address": "Area 3, Lilongwe",
+      "phone": "+265 991 234 567",
+      "website": "https://visionlinkmedia.mw",
+      "image": "vision-link.png",
+      "membershipLevel": 1,
+      "industry": "Digital Marketing",
+      "description": "Helping brands grow through digital storytelling and creative campaigns."
+    },
+    {
+      "name": "Green Harvest Organics",
+      "address": "Chikwawa Agricultural Zone",
+      "phone": "+265 997 654 321",
+      "website": "https://greenharvest.mw",
+      "image": "green-harvest.png",
+      "membershipLevel": 2,
+      "industry": "Agriculture",
+      "description": "Organic produce grown sustainably for local and regional markets."
+    },
+    {
+      "name": "Northern Builders Co.",
+      "address": "Mzuzu Industrial Area",
+      "phone": "+265 998 321 654",
+      "website": "https://northernbuilders.mw",
+      "image": "northern-builders.png",
+      "membershipLevel": 1,
+      "industry": "Construction",
+      "description": "Reliable construction services with a focus on community infrastructure."
+    },
+    {
+      "name": "Chambo Fisheries Ltd.",
+      "address": "Nkhotakota Lakeshore",
+      "phone": "+265 996 789 123",
+      "website": "https://chambofisheries.mw",
+      "image": "chambo-fisheries.png",
+      "membershipLevel": 3,
+      "industry": "Aquaculture",
+      "description": "Sustainable fish farming and distribution across Malawi."
+    },
+    {
+      "name": "SolarBright Energy",
+      "address": "Blantyre Tech Hub",
+      "phone": "+265 995 456 321",
+      "website": "https://solarbright.mw",
+      "image": "solarbright.png",
+      "membershipLevel": 2,
+      "industry": "Renewable Energy",
+      "description": "Affordable solar solutions for homes, schools, and small businesses."
+    }
+  ]
+}

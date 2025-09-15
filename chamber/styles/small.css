@@ -1,3 +1,10 @@
+/* for the body */
+body{
+  font-family: 'Roboto';
+}
+main{
+  padding-bottom: 100px;
+}
 /* ---------- This is for the header ---------- */
 header{
   display: flex;
@@ -54,6 +61,7 @@ nav{
 .outer-container{
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 15px;
 }
 
 .content-section{
@@ -70,4 +78,79 @@ nav{
   padding: 10px;
 }
 
+.weather-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
 
+.weather-img img{
+  width: 100%;
+}
+
+.business-section section{
+  border: solid red 1px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.business-name{
+  text-align: center;
+  border-bottom: solid black 1px;
+  
+}
+
+.business-name h2, .business-name p{
+  margin: 0;
+}
+
+.business-info{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 50px;
+}
+
+.business-info img{
+  width: 100%;
+  padding: 5px;
+}
+
+/* ---------- footer ---------- */
+
+footer{
+  background-color: brown;
+  padding: 10px;
+  
+  height: 350px;
+ 
+  /* left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px; */
+}
+
+.chamber-address{
+  color: white;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.social img{
+  width: 40px;
+  padding: 10px;
+}
+
+.social img:hover{
+  background-color: rgb(168, 164, 164);
+  border-radius: 5px;
+  transition: background-color 0.25s;
+}
+.my-info{
+  color: white;
+}
+
+.about{
+  color: white;
+}
