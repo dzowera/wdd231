@@ -17,60 +17,8 @@
 
    <!-- link the JS File, remember order matters -->
   <script src="scripts/header.js" defer></script>
-
-   <style>
-    header{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 50px;
-      background-color: brown;
-      padding: 10px;
-      color: white;
-    }
-    #logo-name{
-      display: flex;
-    }
-    #logo-name img{
-      width: 60px;
-      margin: 0 7px;
-    }
-    #logo-name p{
-      font-size: 20px;
-    }
-
-    #ham-menu{
-      font-size: 30px;
-    }
-    #ham-menu:hover{
-      cursor: pointer;
-      color: brown;
-      background-color: white;
-      padding: 5px;
-      transition: color 0.25s, background-color 0.25s, padding 0.25s ;
-      
-    }
-
-    nav{
-      display: none;
-    }
-
-    .js-nav{
-      display: flex;
-      justify-content: center;
-      background-color: aqua;
-     
-    }
-    .js-nav ul li a{
-      text-decoration: none;
-      color: black;
-
-    }
-    .js-nav ul li{
-      list-style-type: none;
-      padding: 5px;
-    }
-   </style>
+  <!-- link css, remember order matters -->
+  <link rel="stylesheet" href="styles/small.css">
 <body>
   <header>
     <div id="logo-name">
@@ -88,5 +36,15 @@
       <li><a href="#" class="element">Join</a></li>
     </ul>
   </nav>
+  <main>
+    <h1>Home</h1>
+    <div class="outer-container">
+     <section class="content-section">
+      <h2>Event</h2>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur voluptates officia doloremque laboriosam neque illum deleniti maxime alias aspernatur consectetur perspiciatis non provident earum voluptatibus voluptatum, quas aperiam modi.
+      Placeat, inventore. Autem nobis ipsum odio reiciendis id est qui, minima, voluptatibus fugit molestiae quidem similique consequuntur fugiat sit adipisci. Molestias recusandae, commodi voluptatibus optio omnis fugit aliquam cum quasi?</div>
+     </section>
+    </div>
+  </main>
 </body>
 </html>

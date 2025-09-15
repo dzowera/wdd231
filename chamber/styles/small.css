@@ -1,0 +1,73 @@
+/* ---------- This is for the header ---------- */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: brown;
+  padding: 10px;
+  color: white;
+}
+#logo-name{
+  display: flex;
+}
+#logo-name img{
+  width: 60px;
+  margin: 0 7px;
+}
+#logo-name p{
+  font-size: 20px;
+}
+
+#ham-menu{
+  font-size: 30px;
+}
+#ham-menu:hover{
+  cursor: pointer;
+  color: brown;
+  background-color: white;
+  padding: 5px;
+  transition: color 0.25s, background-color 0.25s, padding 0.25s ;
+}
+
+nav{
+  display: none;
+}
+
+.js-nav{
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  
+}
+.js-nav ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+.js-nav ul li{
+  list-style-type: none;
+  padding: 5px;
+}
+
+/* ---------- This is for the main ---------- */
+.outer-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content-section{
+  background-color: red;
+}
+.content-section h2{
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+}
+
+.content-section div{
+  padding: 10px;
+}
+
+
