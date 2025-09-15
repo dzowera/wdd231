@@ -10,11 +10,83 @@
   <link rel="icon" href="../images/favicon.ico">
 
   <!-- add FaceBook tag title, desc, img, url -->
-   <meta property="og:title" content="Innocent Chamber Project">
-   <meta property="og:description" content="Home Page for Innocent's Chamber Project">
-   <meta property="og:image" content="https://dzowera.github.io/wdd231/images/placeholder.jpg">
-   <meta property="og:url" content="https://dzowera.github.io/wdd231/chamber/directory.html">
+  <meta property="og:title" content="Innocent Chamber Project">
+  <meta property="og:description" content="Home Page for Innocent's Chamber Project">
+  <meta property="og:image" content="https://dzowera.github.io/wdd231/images/placeholder.jpg">
+  <meta property="og:url" content="https://dzowera.github.io/wdd231/chamber/directory.html">
+
+   <!-- link the JS File, remember order matters -->
+  <script src="scripts/header.js" defer></script>
+
+   <style>
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      background-color: brown;
+      padding: 10px;
+      color: white;
+    }
+    #logo-name{
+      display: flex;
+    }
+    #logo-name img{
+      width: 60px;
+      margin: 0 7px;
+    }
+    #logo-name p{
+      font-size: 20px;
+    }
+
+    #ham-menu{
+      font-size: 30px;
+    }
+    #ham-menu:hover{
+      cursor: pointer;
+      color: brown;
+      background-color: white;
+      padding: 5px;
+      transition: color 0.25s, background-color 0.25s, padding 0.25s ;
+      
+    }
+
+    nav{
+      display: none;
+    }
+
+    .js-nav{
+      display: flex;
+      justify-content: center;
+      background-color: aqua;
+     
+    }
+    .js-nav ul li a{
+      text-decoration: none;
+      color: black;
+
+    }
+    .js-nav ul li{
+      list-style-type: none;
+      padding: 5px;
+    }
+   </style>
 <body>
-  
+  <header>
+    <div id="logo-name">
+      <img src="images/human-social-security.svg" alt="Vision Link Logo">
+      <p>Vision Link</p>
+    </div>
+    <div id="ham-menu">
+      &#9776;
+    </div>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="#" class="element">Home</a></li>
+      <li><a href="#" class="element">Discover</a></li>
+      <li><a href="#" class="element">Join</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
