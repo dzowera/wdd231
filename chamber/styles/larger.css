@@ -1,0 +1,45 @@
+@media (min-width: 1200px) {
+  #ham-menu{
+    display: none;
+  }
+  .wide-nav{
+    display: block;
+  }
+  .wide-nav ul{
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+  .wide-nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+
+  .wide-nav ul li {
+    list-style: none;
+    padding: 5px;
+    font-size: 30px;
+  
+  }
+
+  .wide-nav ul li a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: color 0.25s, background-color 0.25s;
+  }
+
+  .outer-container{
+    display: grid;
+    grid-template-columns: 1fr 350px 350px;
+    column-gap: 20px;
+  }
+
+  .business-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+}
