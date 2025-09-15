@@ -7,6 +7,7 @@ async function getMembers(){
   // console.table(data.members);
 
   renderHTML(data.members)
+  listView(data.members)
 
 }
 
@@ -37,5 +38,28 @@ const renderHTML = (members =>{
   });
 
   document.querySelector('.business-section').innerHTML = html;
-  console.log(html);
+  // console.log(html);
 });
+
+// const listView = (members) => {
+//   document.querySelectorAll('.views').forEach(view => {
+//     view.addEventListener('click', () => {
+//       // add a class to the  business seection
+//       document.querySelector('.business-section').classList.toggle('js-list-container')
+//       let html = ''; // Reset on each click
+//       members.forEach(member => {
+//         html += `
+//           <section class="js-list-view">
+//              <div>${member.name}</div>
+//              <div>${member.address}</div>
+//              <div>${member.phone}</div>
+//              <div>${member.website} </div>
+//           </section>
+         
+//         `;
+//       });
+//       document.querySelector('.business-section').innerHTML = html;
+//     });
+//   });
+// };
+

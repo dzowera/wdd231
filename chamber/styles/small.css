@@ -47,6 +47,7 @@ nav{
   display: flex;
   justify-content: center;
   background-color: rgb(120, 120, 120);
+  margin-bottom: 5px;
   
 }
 .js-nav ul li a{
@@ -77,6 +78,21 @@ nav{
   object-fit:cover;
 }
 
+/* views */
+.list-view{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.list-view img{
+  width: 40px;
+  padding: 10px;
+  border: solid black 1px;
+  margin: 10px;
+}
+.list-view img:hover{
+  cursor: pointer;
+}
 
 
 /* ---------- This is for the main ---------- */
