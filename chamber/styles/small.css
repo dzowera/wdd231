@@ -63,7 +63,7 @@ nav{
 .outer-container{
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 15px;
+  row-gap: 35px;
 }
 
 .content-section{
@@ -91,14 +91,13 @@ nav{
 }
 
 .business-section section{
-  border: solid red 1px;
-  margin: 10px 10px;
+  border: solid red 3px;
+  margin: 30px 0;
   border-radius: 5px;
 }
 .business-name{
   text-align: center;
-  border-bottom: solid black 1px;
-  
+  border-bottom: solid black 3px;
 }
 
 .business-name h2, .business-name p{
@@ -108,12 +107,13 @@ nav{
 .business-info{
   display: grid;
   grid-template-columns: 100px 1fr;
-  column-gap: 50px;
+  column-gap: 70px;
 }
 
 .business-info img{
   width: 100%;
   padding: 5px;
+  
 }
 
 /* ---------- footer ---------- */
