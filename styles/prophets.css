@@ -1,18 +1,27 @@
 
 body{
   background-color: rgb(247, 247, 247);
+  font-family: 'Roboto';
 }
 
-main{
+#cards{
   display: grid;
-  grid-template-columns: auto-fit;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  
 }
+
 .prophet-card{
   background-color: rgb(119, 119, 168);
   color: white;
   text-align: center;
   padding-bottom: 10px;
 }
+
+h1{
+  text-align: center;
+}
+
 footer{
   display: flex;
   justify-content: center;
