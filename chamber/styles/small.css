@@ -39,6 +39,12 @@ header{
   transition: color 0.25s, background-color 0.25s, padding 0.25s ;
 }
 
+.active {
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+
 nav{
   display: none;
 }

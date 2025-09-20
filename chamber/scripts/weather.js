@@ -26,8 +26,8 @@ async function fetchAPI(){
     if(response.ok){
 
       const data = await response.json();
-      console.log(data); // test if we have the data
-      displayHTML(data)
+      // console.log(data); // test if we have the data
+      displayWeather(data)
     }else{
       throw Error (await response.text());
     }
@@ -41,7 +41,7 @@ async function fetchAPI(){
 
 fetchAPI();
 
-function displayHTML(data){
+function displayWeather(data){
   temp.innerHTML = `Temp: ${data.main.temp}&deg; C`;
   description.innerHTML =`Description: ${data.weather[0].description}`;
   highTemp.innerHTML = `Max Temp: ${data.main.temp_max}&deg; C`;
@@ -56,3 +56,4 @@ function displayHTML(data){
 // added a feature to update the data every 10 minutes
 
 setInterval(fetchAPI(), 60000);
+// 

@@ -46,6 +46,7 @@ function displayHTML(members) {
             <p><strong>Email</strong>: ${member.email}</p>
             <p><strong>Phone</strong>: ${member.phone}</p>
             <p><strong>URL</strong>: <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p><strong>Membership Level</strong>: ${member.membershipLevel}</p>
           </div>
         </div>
       </section>
