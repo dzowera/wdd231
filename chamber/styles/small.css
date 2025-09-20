@@ -67,8 +67,10 @@ nav{
   list-style-type: none;
   padding: 5px;
 }
-.way-finding{
+.current{
   text-decoration: underline;
+  color: red;
+
 }
 .hero-images {
   border: solid rgb(120, 120, 120) 2px;
@@ -118,11 +120,30 @@ cursor: pointer;
 }
 
 
+
+.js-list-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  border: solid black 2px;
+}
+#member-name{
+  display: flex;
+  align-items: center;
+}
+
+
+
 /* ---------- This is for the main ---------- */
 .outer-container{
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 35px;
+  
+}
+.black{
+  background-color: black;
+  color: white;
 }
 
 .content-section{
@@ -176,6 +197,7 @@ cursor: pointer;
   width: 100%;
   padding: 5px;
 }
+
 
 
 /* ---------- footer ---------- */

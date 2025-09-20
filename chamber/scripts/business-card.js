@@ -1,21 +1,25 @@
-const url = 'https://dzowera.github.io/wdd231/chamber/data/members.json';
+const myURL = 'https://dzowera.github.io/wdd231/chamber/data/members.json';
 
-
-async function getMembers(){
-  const response = await fetch(url);
-  const data = await response.json();
-  // console.table(data.members);
-
-  renderHTML(data.members)
-  listView(data.members)
-
+async function getMembers() {
+  try {
+    const response = await fetch(myURL);
+    if(response.ok){
+      const data = await response.json();
+      console.log(data);
+      renderHTML(data.members);
+      // listView(data.members)
+    }else{
+      throw Error (await response.text());
+    }
+  } catch (error) {
+    console.error("Error fetching members:", error);
+  }
 }
 
-getMembers();
-
-const renderHTML = (members =>{
+const renderHTML = (members) => {
   let html = '';
-  members.forEach(member => {
+
+  members.forEach((member) => {
     html += `
       <section>
         <div class="business-name">
@@ -27,39 +31,50 @@ const renderHTML = (members =>{
             <img src="images/icons/${member.image}.svg" alt="${member.name} logo">
           </div>
           <div>
-            <p><strong>Email</strong>: ${member.email} </p>
-            <p><strong>Phone</strong>: ${member.phone} </p>
-            <p><strong>URL</strong>: ${member.website} </p>
+            <p><strong>Email</strong>: ${member.email}</p>
+            <p><strong>Phone</strong>: ${member.phone}</p>
+            <p><strong>URL</strong>: <a href="${member.website}" target="_blank">${member.website}</a></p>
           </div>
-          
         </div>
       </section>
     `;
   });
 
-  document.querySelector('.business-section').innerHTML = html;
-  // console.log(html);
+  const section = document.querySelector('.business-section');
+  if (section) {
+    section.innerHTML = html;
+  } else {
+    console.error("No element with class .business-section found in HTML");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  getMembers();
 });
 
-// const listView = (members) => {
-//   document.querySelectorAll('.views').forEach(view => {
-//     view.addEventListener('click', () => {
-//       // add a class to the  business seection
-//       document.querySelector('.business-section').classList.toggle('js-list-container')
-//       let html = ''; // Reset on each click
-//       members.forEach(member => {
-//         html += `
-//           <section class="js-list-view">
-//              <div>${member.name}</div>
-//              <div>${member.address}</div>
-//              <div>${member.phone}</div>
-//              <div>${member.website} </div>
-//           </section>
-         
-//         `;
-//       });
-//       document.querySelector('.business-section').innerHTML = html;
+// function listView(members){
+//   const listViewElem = document.querySelector('.list-view');
+//   listViewElem.addEventListener('click', () =>{
+//     let html = '';
+//     members.forEach((member, index) =>{
+//       const classType = index % 2 === 0 ? 'black' : 'white';
+//       html += `
+//       <div class="list-conainer">
+//         <div class="${classType}">
+//           <div>
+//             ${member.name}
+//           </div>
+//           <div>
+//             ${member.email}
+//           </div>
+//         </div>
+//       </div>
+        
+//       `;
 //     });
+//     document.querySelector('.business-section').innerHTML = html;
+    
 //   });
-// };
+// }
 
+// listView()

@@ -42,4 +42,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
   }
+  .js-list-container{
+    display: none;
+  }
 }
