@@ -4,8 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
+  <link rel="stylesheet" href="styles/small.css">
+
 </head>
 <body>
-  <h2>Hello Everyone</h2>
+  <h2>Thank You For Submitting Your Response</h2>
+  <div id="form-data"></div>
 </body>
+
+<script>
+  const values = new URLSearchParams(window.location.search);
+
+  // get the values
+  const firstName = values.get("firstName");
+  const lastName = values.get("lastName");
+  const email = values.get("email");
+  const phone = values.get("phone");
+  const businessName = values.get("businessName");
+  const timestamp = values.get("timestamp");
+
+  // add the data to the container
+  const container = document.getElementById("form-data");
+    container.innerHTML = `
+      <p><strong>First Name:</strong> ${firstName}</p>
+      <p><strong>Last Name:</strong> ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone Number:</strong> ${phone}</p>
+      <p><strong>Business Name:</strong> ${businessName}</p>
+      <p><strong>Submitted On:</strong> ${new Date(timestamp).toLocaleString()}</p>
+    `;
+
+</script>
 </html>

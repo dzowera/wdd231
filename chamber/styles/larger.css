@@ -45,4 +45,10 @@
   .js-list-container{
     display: none;
   }
+
+  .form-membership{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 }

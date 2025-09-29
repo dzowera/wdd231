@@ -22,6 +22,7 @@
 
    <!-- link the JS File, remember order matters -->
   <script src="scripts/header.js" defer></script>
+  <script src="scripts/membership.js" defer></script>
   <script src="scripts/footer.js" defer></script>
 
   <!-- link css, remember order matters -->
@@ -61,41 +62,98 @@
   </div>
   <main>
     <h1>Join</h1>
-    <form action="thankyou.html" method="get">
+    <section class="form-membership">
+      <form action="thankyou.html" method="get">
 
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="First name" required><br>
+        <!-- First Name -->
+        <label for="name">First Name:</label><br><br>
+        <input type="text" id="name" name="firstName" 
+              placeholder="First name" 
+              autocomplete="given-name" 
+              title="Enter your first name" 
+              required><br><br>
 
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Last name" required><br>
+        <!-- Last Name -->
+        <label for="last-name">Last Name:</label><br><br>
+        <input type="text" id="last-name" name="lastName" 
+              placeholder="Last name" 
+              autocomplete="family-name" 
+              title="Enter your last name" 
+              required><br><br>
 
-      <label for="org">Organisational Title:</label>
-      <input type="text" name="organisation" id="org" pattern="^[A-Za-z\- ]{1,7}$" placeholder="Organisational title" required><br>
+        <!-- Organizational Title -->
+        <label for="org">Organizational Title:</label><br><br>
+        <input type="text" id="org" name="organizationTitle" 
+              placeholder="Organizational title" 
+              autocomplete="organization-title" 
+              title="Enter your title within the organization (min. 7 characters)" 
+              pattern="^[A-Za-z\- ]{7,}$" 
+              required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
+        <!-- Email -->
+        <label for="email">Email:</label><br><br>
+        <input type="email" id="email" name="email" 
+              autocomplete="email" 
+              title="Enter your email address" 
+              placeholder="example@email.com" 
+              required><br><br>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Phone number" required><br>
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br><br>
+        <input type="tel" id="phone" name="phone" 
+              placeholder="Phone number" 
+              autocomplete="tel" 
+              title="Enter your mobile phone number" 
+              required><br><br>
 
-      <label for="business-name">Business Name</label>
-      <input type="text" name="business_name" id="business-name" required placeholder="Business name"><br>
+        <!-- Organization Name -->
+        <label for="business-name">Business Name:</label><br><br>
+        <input type="text" id="business-name" name="businessName" 
+              placeholder="Business name" 
+              autocomplete="organization" 
+              title="Enter your business or organization's name" 
+              required><br><br>
 
-   <!-- select multiple options -->
-      <label for="level">Membership Level</label>
-      <select name="level" id="level">
-        <option value="" >Select</option>
-        <option value="NP">NP organisation</option>
-        <option value="Bronze">Bronze Membership</option>
-        <option value="Silver">Silver Membership</option>
-        <option value="Gold">Gold Membership</option>
-      </select><br>
+        <!-- Membership Level -->
+        <label for="level">Membership Level:</label><br><br>
+        <select id="level" name="membershipLevel" 
+                title="Select your membership level" required>
+          <option value="">Select</option>
+          <option value="NP">NP Membership (Non-Profit, No Fee)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select><br><br>
 
-      <!-- text area -->
-      <label for="description">Description</label>
-      <input type="text" id="description" name="description"><br>
-      <button type="submit">Submit</button>
-    </form>
+        <!-- Description -->
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" 
+                  title="Describe your business or organization" 
+                  rows="5" cols="40"></textarea><br><br>
+
+        <!-- Hidden Timestamp -->
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <!-- Submit -->
+        <button type="submit">Submit Application</button>
+
+      </form>
+      <script>
+      // Fill hidden timestamp when form loads
+      document.getElementById('timestamp').value = new Date().toISOString();
+      </script>
+
+      <div id="membership-cards">
+        <h2>Membership Levels</h2>
+        <dialog id="my-dialog">
+           <button id="close">&times;</button>
+          <p id="content"></p>
+        </dialog>
+      </div>
+    </section>
+    
+   
+
   </main>
   <footer>
     <div class="chamber-address">
