@@ -1,0 +1,29 @@
+@media screen and (min-width: 600px) {
+
+  #ham-menu{
+    display: none;
+  }
+
+  #wide-nav{
+    display: block;
+    padding: 8px;
+  }
+
+  #wide-nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  #wide-nav ul li{
+    list-style: none;
+    padding: 15px;
+    transition: background-color 0.25s;
+  }
+
+  #wide-nav ul li:hover{
+      background-color: rgb(240, 240, 240);
+      border-radius: 5px;
+      cursor: pointer;
+    
+  }  
+    
+}
