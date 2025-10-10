@@ -3,9 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <meta name="author" content="Innocent Dzowera">
+  <meta name="description" content="Landing page for Chamber project">
+  <title>Chamber Project</title>
+   <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
+  <!-- add my favicon -->
+  <link rel="icon" href="../images/favicon.ico">
+
+  <!-- add FaceBook tag title, desc, img, url -->
+  <meta property="og:title" content="Innocent Chamber Project">
+  <meta property="og:description" content="Home Page for Innocent's Chamber Project">
+  <meta property="og:image" content="https://dzowera.github.io/wdd231/images/placeholder.jpg">
+  <meta property="og:url" content="https://dzowera.github.io/wdd231/chamber/directory.html">
+
+   <!-- link the JS File, remember order matters -->
+  <script src="scripts/header.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/discover.js" type="module" defer></script>
+  <!-- link css, remember order matters -->
+   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo-name">
+      <img src="images/human-social-security.svg" alt="Vision Link Logo">
+      <p>Lilongwe Chamber of Commerce</p>
+    </div>
+    <div id="ham-menu">
+      &#9776;
+    </div>
+    <div class="wide-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html" class="element">Home</a></li>
+      <li><a href="directory.html" class="element active">Directory</a></li>
+      <li><a href="join.html" class="element">Join</a></li>
+      <li><a href="discover.html" class="element">Discover</a></li>
+    </ul>
+  </nav>
+  <div class="hero-images">
+    <img src="images/hero-image.jpg" alt="picture of business" loading="lazy">
+    <button htype="button" onclick="window.location.href='join.html'">Join</button>
+  </div>
+  <main>
+    
+  </main>
+
+  <footer>
+    <div class="chamber-address">
+      <p>Vision Link</p>
+      <p>Malingunde Road</p>
+      <p>info@visionlink.org</p>
+      <p>+265 99 5877 256</p>
+    </div>
+    <div class="social">
+      <a href="https://web.facebook.com/Centinho22" target="_blank">
+        <img src="images/facebook.svg" alt="facebook logo">
+      </a>
+      <a href="https://github.com/dzowera" target="_blank">
+        <img src="images/github.svg" alt="github logo">
+      </a>
+      <a href="https://www.linkedin.com/in/innocent-dzowera-a31477274" target="_blank">
+        <img src="images/linkedin.svg" alt="linkedin logo">
+      </a>
+      <a href="https://wa.me/265995877256" target="_blank">
+        <img src="images/whatsapp.svg" alt="whatsapp logo">
+      </a>
+    </div>
+    <div class="about">
+      <p>WDD231 Class project</p>
+      <p id="name"></p>
+      <p>&copy;<span id="year"></span> Vision Link</p>
+      <p>Last Date Modified: <span id="last-mod"></span></p>
+    </div>
+  </footer>
 </body>
 </html>
