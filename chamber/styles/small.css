@@ -264,7 +264,7 @@ input{
   grid-template-areas:
     "pic header"
     "pic location"
-    "pic desc";
+    "desc desc";
   gap: 10px;
   margin: 20px 0;
   padding: 10px;
@@ -333,4 +333,7 @@ footer{
 .wide-nav{
   display: none;
 }
-
+#message{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
