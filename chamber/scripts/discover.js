@@ -12,5 +12,5 @@ lilongweAreas.forEach(area => {
   `;
 });
 
-const container = document.querySelector('.places-container'); // Use a wrapper for all cards
+const container = document.querySelector('.places-container'); 
 container.innerHTML = html;
