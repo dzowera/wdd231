@@ -58,6 +58,17 @@
     column-gap: 10px;
   }
 
+  .place-card img {
+    transition: transform 0.3s ease;
+  }
+
+  .place-card img:hover {
+    transform: scale(0.95);
+    filter: brightness(1.1);
+    cursor: pointer;
+  }
+
+
   .place-card {
     grid-template-columns: 1fr;
     grid-template-areas:

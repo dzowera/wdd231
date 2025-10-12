@@ -30,41 +30,27 @@ export const lilongweAreas = [
   },
   {
     id: 5,
-    name: "Lilongwe Golf Club",
-    location: "Old Town, Lilongwe",
-    description: "One of the oldest recreational areas in the city offering an 18-hole golf course, restaurant, and leisure space for both locals and visitors.",
-    imageUrl: "https://dzowera.github.io/wdd231/chamber/images/places/lilongwe-golf-club.webp"
-  },
-  {
-    id: 6,
     name: "Bingu National Stadium",
     location: "Kanengo, Lilongwe",
     description: "A modern multi-purpose stadium used for national football matches, concerts, and public events — a symbol of Malawi’s growing sports culture.",
     imageUrl: "https://dzowera.github.io/wdd231/chamber/images/places/bns.webp"
   },
   {
-    id: 7,
+    id: 6,
     name: "Four Seasons Garden and Restaurant",
     location: "City Centre, Lilongwe",
     description: "A peaceful garden featuring local and exotic plants, an art gallery, and a fine restaurant — a favourite relaxation spot in the city.",
     imageUrl: "https://dzowera.github.io/wdd231/chamber/images/places/four-seasons-garden.webp"
   },
   {
-    id: 8,
+    id: 7,
     name: "Craft Market (Old Town Mall)",
     location: "Old Town, Lilongwe",
     description: "A popular spot for tourists to buy Malawian crafts — wood carvings, jewellery, paintings, and handmade souvenirs.",
     imageUrl: "https://dzowera.github.io/wdd231/chamber/images/places/craft-market.webp"
   },
   {
-    id: 9,
-    name: "Nature Sanctuary Trail",
-    location: "Central Lilongwe",
-    description: "A scenic walking trail within the Wildlife Centre offering peace, birdwatching, and a break from the city noise.",
-    imageUrl: "https://dzowera.github.io/wdd231/chamber/images/places/sanctuary-trail.webp"
-  },
-  {
-    id: 10,
+    id: 8,
     name: "Kamuzu International Airport",
     location: "Northern Lilongwe",
     description: "The country’s main international airport, named after the first President, and an important gateway into Malawi.",
