@@ -4,16 +4,36 @@ let html = '';
 lilongweAreas.forEach(area => {
   html += `
     <div class="place-card">
-      <img src="${area.imageUrl}" alt="${area.location} loading="lazy">
+      <img src="${area.imageUrl}" alt="${area.location}" loading="lazy">
       <h2>${area.name}</h2>
       <p class="location">${area.location}</p>
       <p class="desc">${area.description}</p>
+      <button id="openBtn">Learn More</button>
+
+      <dialog id="myDialog">
+        <p>${area.description}</p>
+        <button id="closeBtn">Close</button>
+      </dialog>
+
     </div>
   `;
 });
 
 const container = document.querySelector('.places-container'); 
 container.innerHTML = html;
+
+// dialog
+const dialog = document.getElementById('myDialog');
+const openBtn = document.getElementById('openBtn');
+const closeBtn = document.getElementById('closeBtn');
+
+openBtn.addEventListener('click', () => {
+      dialog.showModal(); // Opens the dialog
+});
+
+closeBtn.addEventListener('click', () => {
+      dialog.close(); // Closes the dialog
+});
 
 
 //  local storage

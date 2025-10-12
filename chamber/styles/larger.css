@@ -52,6 +52,12 @@
     column-gap: 20px;
   }
 
+  .places-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
   .place-card {
     grid-template-columns: 1fr;
     grid-template-areas:

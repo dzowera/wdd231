@@ -279,6 +279,9 @@ input{
   height: auto;
   object-fit: cover;
 }
+/* .place-card img:hover{
+  cursor: pointer;
+} */
 
 .place-card h2 {
   grid-area: header;
@@ -294,6 +297,13 @@ input{
 .place-card .desc {
   grid-area: desc;
   color: #333;
+}
+
+#openBtn{
+  width: 65px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  color: white;
 }
 
 /* ---------- footer ---------- */
