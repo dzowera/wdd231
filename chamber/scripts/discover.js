@@ -19,21 +19,21 @@ lilongweAreas.forEach(area => {
   `;
 });
 
-const container = document.querySelector('.places-container'); 
+const container = document.querySelector('.places-container');
 container.innerHTML = html;
 
-// dialog
-const dialog = document.getElementById('myDialog');
-const openBtn = document.getElementById('openBtn');
-const closeBtn = document.getElementById('closeBtn');
+// Attach dialog logic to each card
+const cards = container.querySelectorAll('.place-card');
 
-openBtn.addEventListener('click', () => {
-      dialog.showModal(); // Opens the dialog
+cards.forEach(card => {
+  const dialog = card.querySelector('dialog');
+  const openBtn = card.querySelector('button');
+  const closeBtn = dialog.querySelector('button');
+
+  openBtn.addEventListener('click', () => dialog.showModal());
+  closeBtn.addEventListener('click', () => dialog.close());
 });
 
-closeBtn.addEventListener('click', () => {
-      dialog.close(); // Closes the dialog
-});
 
 
 //  local storage
