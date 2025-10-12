@@ -262,8 +262,9 @@ input{
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-areas:
-    "pic header"
-    "pic location"
+    "header header"
+    "pic pic"
+    "location location"
     "desc desc";
   gap: 10px;
   margin: 20px 0;

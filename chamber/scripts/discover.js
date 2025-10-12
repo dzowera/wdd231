@@ -4,7 +4,7 @@ let html = '';
 lilongweAreas.forEach(area => {
   html += `
     <div class="place-card">
-      <img src="${area.imageUrl}" alt="${area.location}">
+      <img src="${area.imageUrl}" alt="${area.location} loading="lazy">
       <h2>${area.name}</h2>
       <p class="location">${area.location}</p>
       <p class="desc">${area.description}</p>
