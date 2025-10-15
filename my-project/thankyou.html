@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NutriLife Malawi Site Plan">
+  <meta name="author" content="Innocent Dzowera">
+  <title>Nutri Life Site Plan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- order matters -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/card.js" type="module"></script>
+
+  <style>
+
+   
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+
+      <div id="brand">
+        <img src="images/nutrition.png" alt="NutriLife Logo">
+        <h2>NutriLife Malawi</h2>
+      </div>
+
+      <nav id="wide-nav">
+        <ul>
+          <li><a class="current">Home</a></li>
+          <li><a>BMI</a></li>
+          <li><a>Join</a></li>
+        </ul>
+      </nav>
+
+      <div id="ham-menu">
+        <button>☰</button>
+      </div>
+    </div>
+
+    <nav id="hidden-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="bmi.html">BMI</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+  <h1>Thank You!</h1>
+  <p>Your submission has been received. Here's what you shared:</p>
+
+  <div class="submission-card" id="submissionCard"></div>
+</main>
+
+  <footer>
+    <div>
+      <p>NutriLife Malawi</p>
+      <p>Malingunde Rd</p>
+      <p>Lilongwe</p>
+    </div>
+
+    <div id="socials">
+      <img src="images/linkedin.svg" alt="linkedin">
+      <img src="images/github.svg" alt="github">
+      <img src="images/whatsapp.svg" alt="whatsapp">
+      <img src="images/facebook.svg" alt="facebook">
+    </div>
+
+    <div>
+      <p>WDD231 Class project</p>
+      <p>Innocent Dzowera</p>
+      <p>&copy; 2025 NutriLife</p>
+      <p>Last Date Modified: <span id="date"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const data = JSON.parse(localStorage.getItem("submittedData"));
+    const card = document.getElementById("submissionCard");
+
+    if (data) {
+      card.innerHTML = `
+        <p><strong>First Name:</strong> ${data.firstName}</p>
+        <p><strong>Last Name:</strong> ${data.lastName}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Membership:</strong> ${data.membership}</p>
+        <p><strong>Suggestions:</strong> ${data.suggestions || "None"}</p>
+      `;
+      localStorage.removeItem("submittedData"); // Optional: clear after display
+    } else {
+      card.innerHTML = `<p>No submission data found. Please fill out the form first.</p>`;
+    }
+
+    document.getElementById("date").textContent = document.lastModified;
+  });
+
+  </script>
+
+</body>
+</html>

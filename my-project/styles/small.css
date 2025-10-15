@@ -1,0 +1,270 @@
+body{
+      font-family: 'Roboto';
+      background-color: rgb(240, 240, 240);
+      margin: 0;
+
+    }
+main{
+  padding: 40px;
+}
+main img{
+  width: 250px;
+}
+button{
+  width: 44px;
+  cursor: pointer;
+}
+header{
+  padding: 10px;
+  background-color: rgb(210, 180, 140);
+  
+}
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#brand{
+  display: flex;
+  align-items: center;
+}
+#brand img{
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#hidden-nav{
+  background-color: rgb(240, 240, 240);
+  display: none;
+}
+
+#hidden-nav ul{
+  list-style: none;
+  
+}
+
+#hidden-nav ul li{
+  padding: 5px;
+  text-align: center;
+}
+#wide-nav{
+  display: none;
+}
+
+.current{
+  color: blue;
+}
+/* info */
+.about{
+  display: grid;
+
+}
+/* the section */
+section{
+  border: solid green 1px;
+  margin: 10px;
+  
+}
+section h3{
+  background-color: rgb(134, 88, 27);
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+/* ---------------- THE FOOD CARD ------------ */
+.food-container{
+  display: grid;
+  row-gap: 10px;
+  place-self: center;
+}
+
+.food-card{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-areas: 
+  "name"
+  "pic"
+  "info"
+  "button"
+  ;
+
+  border: solid red 2px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.name{
+  grid-area: name;
+  text-align: center;
+}
+
+.food-card img{
+  grid-area: pic;
+  place-self: center;
+}
+
+.info{
+  grid-area: info;
+  text-align: center;
+}
+
+#more{
+  grid-area: button;
+  margin: 5px auto;
+  
+}
+
+/* The Join */
+.big-container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    #submit {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      form {
+        padding: 1.5rem;
+      }
+    }
+
+    .card-container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #0078d4;
+}
+
+.learn-more {
+  padding: 0.5rem 1rem;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.learn-more:hover {
+  background-color: #005fa3;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+#closeDialog {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+footer{
+  margin-top: 10px;
+  display: grid;
+  background-color: rgb(210, 180, 140);
+  text-align: center; 
+}
+footer img{
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+footer img:hover{
+  background-color: rgb(240, 240, 240);
+  border-radius: 3px;
+}
+
+#socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
