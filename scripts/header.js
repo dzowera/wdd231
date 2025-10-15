@@ -3,9 +3,6 @@ const buttonElement = document.querySelector('.ham-menu');
     buttonElement.addEventListener('click', ()=>{
       navElement.classList.toggle('add-x');
 
-      
-      
-
       if(navElement.classList.contains('add-x')){
         buttonElement.innerHTML = `&times;`;
       }else{
@@ -13,9 +10,9 @@ const buttonElement = document.querySelector('.ham-menu');
       }
     });
 
-    document.querySelectorAll('nav ul li').forEach(link =>{
-      link.addEventListener('click', () =>{
-        navElement.classList.remove('add-x');
-        buttonElement.innerHTML = `&#9776;`;
-      });
-    });
+document.querySelectorAll('nav ul li').forEach(link =>{
+  link.addEventListener('click', () =>{
+    navElement.classList.remove('add-x');
+    buttonElement.innerHTML = `&#9776;`;
+  });
+});
