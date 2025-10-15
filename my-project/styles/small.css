@@ -3,7 +3,8 @@ body{
       background-color: rgb(240, 240, 240);
       margin: 0;
 
-    }
+}
+
 main{
   padding: 40px;
 }
@@ -17,13 +18,14 @@ button{
 header{
   padding: 10px;
   background-color: rgb(210, 180, 140);
-  
 }
+
 .header-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 #brand{
   display: flex;
   align-items: center;
@@ -41,13 +43,18 @@ header{
 
 #hidden-nav ul{
   list-style: none;
-  
 }
 
 #hidden-nav ul li{
   padding: 5px;
   text-align: center;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 #wide-nav{
   display: none;
 }
@@ -260,7 +267,16 @@ dialog {
   cursor: pointer;
   width: 100%;
 }
+/* ---- BMI ---- */
+#gender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#bmiForm{
+  margin: auto;
+}
 
 footer{
   margin-top: 10px;

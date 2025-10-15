@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NutriLife Malawi Site Plan">
   <meta name="author" content="Innocent Dzowera">
-  <title>Nutri Life Site Plan</title>
+  <title>Nutri Life BMI Page</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +35,9 @@
 
       <nav id="wide-nav">
         <ul>
-          <li><a class="current">Home</a></li>
-          <li><a>BMI</a></li>
-          <li><a>Join</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="bmi.html">BMI</a></li>
+          <li><a href="join.html">Join</a></li>
         </ul>
       </nav>
 
@@ -62,12 +62,12 @@
     <div class="about">
       <section>
       <h3>Hello</h3>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, molestiae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iusto aliquid odit, sit voluptatibus id ullam repudiandae similique a sunt quis consequuntur. Accusamus exercitationem nulla dolor repudiandae, ratione quas doloribus?
+      Body Mass Index (BMI) is a simple yet powerful tool used to estimate whether your weight is healthy in relation to your height. It’s calculated by dividing your weight in kilograms by the square of your height in meters. While BMI doesn’t measure body fat directly, it offers a quick snapshot of your weight category — underweight, normal, overweight, or obese — and helps guide conversations around nutrition, fitness, and wellness.
     </section>
 
     <section>
       <h3>Hello</h3>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, molestiae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti iusto aliquid odit, sit voluptatibus id ullam repudiandae similique a sunt quis consequuntur. Accusamus exercitationem nulla dolor repudiandae, ratione quas doloribus?
+      Understanding your BMI can be a first step toward better health. It helps you recognize potential risks like heart disease, diabetes, or malnutrition, and empowers you to make informed lifestyle choices. Whether you're aiming to maintain, lose, or gain weight, knowing your BMI gives you a clearer picture of where you stand — and where you want to go. At NutriLife Malawi, we encourage everyone to check their BMI regularly and use it as a starting point for personalized nutrition and wellness planning.
     </section>
     </div>
     
@@ -76,10 +76,13 @@
   <input type="number" placeholder="Enter your age" id="age">
 
   <p>Gender</p>
-  <input type="radio" name="gender" id="male" value="male">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="female" value="female">
-  <label for="female">Female</label>
+  <div id="gender">
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+  </div>
+  
 
   <p>Height</p>
   <input type="number" placeholder="cm" id="height">
