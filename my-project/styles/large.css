@@ -26,8 +26,20 @@
     
   }  
 
+  .food-card {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "pic name"
+      "pic info"
+      "pic button";
+    width: 600px;
+  }
+
+
+
+
   .food-container{
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
     column-gap: 10px;
   }
 
